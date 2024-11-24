@@ -1,0 +1,11 @@
+Flow of Continuous Integration
+
+1-When developers make changes and commit the code, it is stored in Git. Tools like Git Fetch and Git Push are used to transfer the code.
+
+2-The code is then transferred for the build process, which happens in Maven.
+3-We then run unit tests on the code, which are also handled through Maven.
+
+4-The code is then sent to SonarQube for analysis purposes.
+
+5-Finally, the code is sent to Nexus or Sonatype for uploading artifacts to the server.
+All these steps happen in stages.
