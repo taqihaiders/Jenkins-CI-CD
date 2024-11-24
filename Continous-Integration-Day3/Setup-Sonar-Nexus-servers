@@ -1,0 +1,59 @@
+#Jenkins, SonarQube, and Nexus Setup
+Jenkins Server:
+
+1-The Jenkins server has already been set up.
+2-There is no need to reconfigure Jenkins.
+
+#Focus:
+
+We will focus on setting up SonarQube and Nexus servers.
+EC2 Instances:
+
+1-SonarQube and Nexus will be deployed on separate t2.medium EC2 instances.
+2-Source code will be uploaded to these servers for configuration.
+
+#Security Groups:
+
+1-Allow connections only from:
+2-Your IP: For administrative access.
+3-Jenkins server: For integration purposes.
+
+Next Steps
+Set up SonarQube Server:
+
+Install SonarQube on the EC2 instance.
+Configure the database and plugins for code quality analysis.
+Set up Nexus Server:
+
+Install Nexus on the EC2 instance.
+Configure it to store and manage artifacts.
+Pipeline as Code
+Definition:
+
+Started creating a Pipeline as Code to automate tasks such as:
+Fetching code from the repository.
+Performing unit tests.
+Building the artifact.
+
+#Script:
+
+A script written in Groovy language will handle pipeline stages.
+Key Steps in Writing the Script:
+
+#Tools Identification:
+
+1-Specify the tools required for the pipeline (e.g., Maven, SonarQube, Nexus).
+Stages Definition:
+
+#Define the following stages:
+
+1-Fetch Code: Retrieve source code from the repository.
+2-Unit Test: Run automated tests.
+3-Build: Compile the source code and generate artifacts.
+
+#Configuration:
+
+1-Configure the pipeline to integrate with SonarQube and Nexus for:
+2-Code quality checks.
+3-Artifact uploads.
+
