@@ -1,0 +1,22 @@
+#First build:
+1-I set up my first build on jenkins by login to my account
+2-I firstly setup jdk repository in my ubuntuVM which hists on AWS
+
+3-I installed plugin of maven
+4-I start my first Build by just giving a simple code to chehck if it is working fine or not 
+
+#Vprofile build:
+#Purpose to create it
+"I start building vprofile_build to chehck if i am able to fetch code from github repo or not"
+
+#Steps:
+1-I went to create new item on jenkins
+2-Gave name "vprfile build"
+3-select 1st option from below and Ok
+4-I select maven as Maven3.9 which we alreasy setup in day1
+5-I select jdk as "JDK17" Which we already installed during installation of Jenkins
+6-I gave my vprofile github Link 
+#link "https://github.com/hkhcoder/vprofile-project.git"
+7-keep the branch "main"
+8-Saves all teh settings and OK
+9-I starts my Build test and it works and successfully fetches the data from gihub Reop.
